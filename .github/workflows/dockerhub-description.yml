@@ -21,5 +21,4 @@ jobs:
           username: ${{ secrets.DOCKER_LOGIN }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: wildwildangel/alpine-htpasswd
-          readme-filepath: ./README.md
           short-description: Alpine-based image to manipulate .htpasswd-like files
