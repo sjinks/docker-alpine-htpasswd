@@ -18,8 +18,8 @@ jobs:
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          username: ${{ secrets.DOCKER_LOGIN }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           repository: wildwildangel/alpine-htpasswd
           readme-filepath: ./README.md
           short-description: Alpine-based image to manipulate .htpasswd-like files
